@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology Stack | HARDAM</title>
+<meta name="description" content="The technology behind HARDAM — Java 25, Java Swing, PHP, MySQL, HTML5, CSS3, JavaScript, WebSocket, and REST API.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="HARDAM home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <rect x="1" y="1" width="28" height="28" rx="8" fill="#0B3D91"/>
+          <path d="M8 20 L8 10 M8 15 L15 15 M15 20 L15 10 M22 10 L22 20 L18 16" stroke="#FFC93C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </span>
+      <span class="brand-word">HARDAM</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="about.html" >About</a>
+      <a href="products.html" >Products</a>
+      <a href="features.html" >Features</a>
+      <a href="architecture.html" >Architecture</a>
+      <a href="documentation.html" >Docs</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode"></button>
+      <a href="contact.html" class="btn btn-primary">Request a demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <section class="page-hero">
+    <div class="hero-field" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Technology</p>
+      <h1>A stack chosen for institutions, not startups</h1>
+      <p>Every technology in HARDAM was picked for one reason: it still works when a network is old, an IT staff is small, and a system needs to run for a decade.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="card-grid">
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">JV</span><h3>Java 25</h3><p>Powers the counter and kiosk desktop clients — stable, long-supported, and easy to deploy on aging institutional hardware.</p></article>
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">SW</span><h3>Java Swing</h3><p>The desktop UI toolkit behind the counter application — lightweight and dependency-free for IT teams to install.</p></article>
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">PHP</span><h3>PHP</h3><p>Drives the API layer — widely supported by the shared hosting most institutions already use.</p></article>
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">SQL</span><h3>MySQL</h3><p>Stores tickets, staff accounts, and historical reporting data with a proven backup and replication story.</p></article>
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">H5</span><h3>HTML5</h3><p>Structures the public portal, kiosk screens, and admin dashboard.</p></article>
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">C3</span><h3>CSS3</h3><p>Delivers the responsive, accessible interface across desktop, kiosk, and mobile.</p></article>
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">JS</span><h3>JavaScript</h3><p>Handles live updates, counters, and interactivity in every browser-based screen.</p></article>
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">WS</span><h3>WebSocket</h3><p>Keeps ticket boards and dashboards updated in real time without polling the server.</p></article>
+        <article class="product-card"><span class="tech-mono" style="display:inline-block;margin-bottom:12px;">API</span><h3>REST API</h3><p>A documented, versioned interface for integrating HARDAM with existing student, hospital, or billing systems.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" id="contact">
+    <div class="wrap cta-inner">
+      <h2>Questions for your IT or procurement team?</h2>
+      <p>We provide technical documentation and can join a call with your infrastructure team directly.</p>
+      <div class="hero-cta">
+        <a href="documentation.html" class="btn btn-accent btn-lg">Read the documentation</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-word">HARDAM</span>
+      <p>Smart Queue &amp; Citizen Service Management Platform</p>
+      <div class="social-row">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.08-2.7-1.08-.36-.94-.89-1.19-.89-1.19-.72-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.23 1.87.87 2.33.67.07-.52.28-.87.5-1.08-1.78-.2-3.65-.89-3.65-3.97 0-.88.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.13 0 0 .68-.22 2.2.83a7.6 7.6 0 014 0c1.53-1.05 2.2-.83 2.2-.83.44 1.11.16 1.93.08 2.13.52.56.83 1.27.83 2.15 0 3.09-1.88 3.76-3.67 3.96.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 008 0z"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="features.html">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="technology.html">Technology</a>
+      <a href="documentation.html">Documentation</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 HARDAM Technologies. All rights reserved. · <a href="#privacy">Privacy policy</a> · <a href="#terms">Terms of service</a></p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HARDAM — Smart Queue &amp; Citizen Service Management Platform</title>
+<meta name="description" content="HARDAM is an enterprise queue, appointment, and citizen service management platform for universities, hospitals, and government agencies.">
+<meta property="og:title" content="HARDAM — Smart Queue & Citizen Service Management Platform">
+<meta property="og:description" content="Modernize every service counter. Real-time queueing, analytics, and multi-department orchestration for public and private institutions.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="HARDAM home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <rect x="1" y="1" width="28" height="28" rx="8" fill="#0B3D91"/>
+          <path d="M8 20 L8 10 M8 15 L15 15 M15 20 L15 10 M22 10 L22 20 L18 16" stroke="#FFC93C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </span>
+      <span class="brand-word">HARDAM</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="features.html">Features</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="documentation.html">Docs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode"></button>
+      <a href="contact.html" class="btn btn-primary">Request a demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-field" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Smart Queue &amp; Citizen Service Platform</p>
+        <h1>Every citizen served.<br>Every window <span class="text-accent">accountable.</span></h1>
+        <p class="hero-sub">HARDAM replaces the paper ticket and the whiteboard tally with a real-time service floor: live queues, appointment scheduling, and department-by-department analytics — built for institutions that serve the public every day.</p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-accent btn-lg">Get started</a>
+          <a href="#dashboard" class="btn btn-outline btn-lg">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5 3.5L12 8L5 12.5V3.5Z" fill="currentColor"/></svg>
+            View live demo
+          </a>
+        </div>
+        <p class="hero-microcopy">No credit card required · Deploys on-premise or cloud · Trusted by 120+ institutions</p>
+      </div>
+
+      <div class="hero-visual" role="img" aria-label="Live queue display showing now serving ticket A047 at Window 3">
+        <div class="board">
+          <div class="board-head">
+            <span class="board-live"><span class="dot"></span> LIVE</span>
+            <span class="board-name">Registrar's Office</span>
+          </div>
+          <div class="board-body">
+            <p class="board-label">NOW SERVING</p>
+            <p class="board-ticket" id="ticketNumber">A047</p>
+            <p class="board-window">Window <span id="windowNumber">03</span></p>
+          </div>
+          <div class="board-queue">
+            <p class="board-queue-label">Up next</p>
+            <ul id="upNext">
+              <li>A048</li>
+              <li>A049</li>
+              <li>A050</li>
+            </ul>
+          </div>
+        </div>
+        <div class="board-chip board-chip-1">
+          <span class="chip-num">4 min</span>
+          <span class="chip-label">avg. wait</span>
+        </div>
+        <div class="board-chip board-chip-2">
+          <span class="chip-num">6</span>
+          <span class="chip-label">windows open</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED TECH BADGES -->
+  <section class="tech-strip">
+    <div class="wrap">
+      <p class="tech-strip-label">Built on a dependable, enterprise-grade stack</p>
+      <ul class="tech-badges">
+        <li><span class="tech-mono">JV</span>Java 25</li>
+        <li><span class="tech-mono">PHP</span>PHP API</li>
+        <li><span class="tech-mono">SQL</span>MySQL</li>
+        <li><span class="tech-mono">WS</span>WebSocket</li>
+        <li><span class="tech-mono">API</span>REST API</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRODUCT INTRODUCTION -->
+  <section class="platform" id="platform">
+    <div class="wrap platform-inner">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span>The Platform</p>
+        <h2>One system for every service counter</h2>
+        <p class="section-sub">From the first ticket printed to the report your director reads Monday morning, HARDAM connects the whole floor — front desk, back office, and leadership — in one continuously synced platform.</p>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar">
+          <div class="pillar-icon" style="background:#EAF1FF;">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 6h14M4 11h14M4 16h8" stroke="#0B3D91" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Queue management</h3>
+          <p>Digital ticketing, priority lanes, and automatic re-routing keep every line moving without a whiteboard in sight.</p>
+        </article>
+        <article class="pillar">
+          <div class="pillar-icon" style="background:#FFF3D6;">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="4" width="16" height="14" rx="2" stroke="#B7791F" stroke-width="2"/><path d="M3 9h16" stroke="#B7791F" stroke-width="2"/></svg>
+          </div>
+          <h3>Appointments</h3>
+          <p>Citizens book a slot online; staff see the same calendar in real time, with automatic no-show handling.</p>
+        </article>
+        <article class="pillar">
+          <div class="pillar-icon" style="background:#FDEAEA;">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 18V11M11 18V4M18 18v-7" stroke="#C53030" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Analytics &amp; reports</h3>
+          <p>Wait times, throughput, and staff performance roll up automatically into reports your team already trusts.</p>
+        </article>
+        <article class="pillar">
+          <div class="pillar-icon" style="background:#EAF1FF;">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="#0B3D91" stroke-width="2"/><rect x="12" y="3" width="7" height="7" rx="1.5" stroke="#0B3D91" stroke-width="2"/><rect x="3" y="12" width="7" height="7" rx="1.5" stroke="#0B3D91" stroke-width="2"/><rect x="12" y="12" width="7" height="7" rx="1.5" stroke="#0B3D91" stroke-width="2"/></svg>
+          </div>
+          <h3>Multi-department</h3>
+          <p>Registrar, billing, OPD, permits — each department runs its own floor while leadership sees it all.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANIMATED DASHBOARD PREVIEW -->
+  <section class="dashboard" id="dashboard">
+    <div class="wrap dashboard-inner">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Command center</p>
+        <h2>See the whole floor at a glance</h2>
+        <p class="section-sub">Every window, every department, every wait time — updating live, no refresh required.</p>
+      </div>
+
+      <div class="browser-mock">
+        <div class="browser-bar">
+          <span class="browser-dot" style="background:#FF5F57"></span>
+          <span class="browser-dot" style="background:#FEBC2E"></span>
+          <span class="browser-dot" style="background:#28C840"></span>
+          <span class="browser-url">hardam.app/dashboard</span>
+        </div>
+        <div class="browser-body">
+          <aside class="mock-sidebar">
+            <div class="mock-side-item active">Overview</div>
+            <div class="mock-side-item">Queues</div>
+            <div class="mock-side-item">Appointments</div>
+            <div class="mock-side-item">Reports</div>
+            <div class="mock-side-item">Settings</div>
+          </aside>
+          <div class="mock-main">
+            <div class="mock-kpis">
+              <div class="mock-kpi">
+                <span class="kpi-label">Served today</span>
+                <span class="kpi-value" data-count="1284">0</span>
+              </div>
+              <div class="mock-kpi">
+                <span class="kpi-label">Avg. wait</span>
+                <span class="kpi-value" data-count="4" data-suffix=" min">0</span>
+              </div>
+              <div class="mock-kpi">
+                <span class="kpi-label">Active windows</span>
+                <span class="kpi-value" data-count="18">0</span>
+              </div>
+            </div>
+            <div class="mock-chart" aria-hidden="true">
+              <div class="bar" style="--h:38%"></div>
+              <div class="bar" style="--h:62%"></div>
+              <div class="bar" style="--h:44%"></div>
+              <div class="bar" style="--h:78%"></div>
+              <div class="bar" style="--h:55%"></div>
+              <div class="bar" style="--h:90%"></div>
+              <div class="bar" style="--h:70%"></div>
+              <div class="bar" style="--h:48%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS COUNTERS -->
+  <section class="stats" id="stats">
+    <div class="wrap stats-inner">
+      <div class="stat">
+        <span class="stat-value" data-count="500000" data-suffix="+">0</span>
+        <span class="stat-label">Citizens served</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" data-count="120" data-suffix="+">0</span>
+        <span class="stat-label">Institutions onboard</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" data-count="60" data-suffix="%">0</span>
+        <span class="stat-label">Avg. wait time reduction</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" data-count="99" data-suffix=".9%">0</span>
+        <span class="stat-label">Platform uptime</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="industries" id="industries">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span>Who it's for</p>
+        <h2>Wherever people wait in line, HARDAM fits</h2>
+      </div>
+      <ul class="industry-grid">
+        <li><span class="ind-num">01</span>Universities &amp; colleges</li>
+        <li><span class="ind-num">02</span>Hospitals &amp; clinics</li>
+        <li><span class="ind-num">03</span>Government agencies</li>
+        <li><span class="ind-num">04</span>Local government units</li>
+        <li><span class="ind-num">05</span>Private organizations</li>
+        <li><span class="ind-num">06</span>Shared service centers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" id="contact">
+    <div class="wrap cta-inner">
+      <h2>Ready to modernize your service counters?</h2>
+      <p>Talk to us about piloting HARDAM in one department — most institutions are live within two weeks.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-accent btn-lg">Request a demo</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg">Contact sales</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-word">HARDAM</span>
+      <p>Smart Queue &amp; Citizen Service Management Platform</p>
+      <div class="social-row">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.08-2.7-1.08-.36-.94-.89-1.19-.89-1.19-.72-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.23 1.87.87 2.33.67.07-.52.28-.87.5-1.08-1.78-.2-3.65-.89-3.65-3.97 0-.88.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.13 0 0 .68-.22 2.2.83a7.6 7.6 0 014 0c1.53-1.05 2.2-.83 2.2-.83.44 1.11.16 1.93.08 2.13.52.56.83 1.27.83 2.15 0 3.09-1.88 3.76-3.67 3.96.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 008 0z"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="features.html">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="technology.html">Technology</a>
+      <a href="documentation.html">Documentation</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 HARDAM Technologies. All rights reserved. · <a href="#privacy">Privacy policy</a> · <a href="#terms">Terms of service</a></p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture | HARDAM</title>
+<meta name="description" content="HARDAM system architecture — Java desktop client, PHP API, MySQL, WebSocket, and deployment options.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="HARDAM home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <rect x="1" y="1" width="28" height="28" rx="8" fill="#0B3D91"/>
+          <path d="M8 20 L8 10 M8 15 L15 15 M15 20 L15 10 M22 10 L22 20 L18 16" stroke="#FFC93C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </span>
+      <span class="brand-word">HARDAM</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="about.html" >About</a>
+      <a href="products.html" >Products</a>
+      <a href="features.html" >Features</a>
+      <a href="architecture.html" aria-current="page" class="active">Architecture</a>
+      <a href="documentation.html" >Docs</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode"></button>
+      <a href="contact.html" class="btn btn-primary">Request a demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <section class="page-hero">
+    <div class="hero-field" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Architecture</p>
+      <h1>Built to stay running on institutional networks</h1>
+      <p>A desktop client for the counter, a lightweight API for everything else, and a database that keeps working when the internet doesn't.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span>System overview</p>
+        <h2>High-level architecture</h2>
+      </div>
+      <div class="arch-diagram">
+        <div class="arch-row">
+          <div class="arch-box">Java Desktop App<br><span style="font-weight:400; font-size:.78rem;">Counter &amp; kiosk clients</span></div>
+          <div class="arch-box">Public Web &amp; Student Portal<br><span style="font-weight:400; font-size:.78rem;">HTML5 / CSS3 / JS</span></div>
+        </div>
+        <p class="arch-arrow">↓ REST API + WebSocket ↓</p>
+        <div class="arch-row">
+          <div class="arch-box amber">PHP API Layer<br><span style="font-weight:400; font-size:.78rem;">Authentication, business logic</span></div>
+        </div>
+        <p class="arch-arrow">↓</p>
+        <div class="arch-row">
+          <div class="arch-box red">MySQL Database<br><span style="font-weight:400; font-size:.78rem;">Tickets, staff, reports</span></div>
+          <div class="arch-box">External Services<br><span style="font-weight:400; font-size:.78rem;">SMS gateway, payment provider</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap split">
+      <div class="split-panel">
+        <h3>Real-time layer</h3>
+        <p>A WebSocket connection keeps every counter display, dashboard, and kiosk screen updated the instant a ticket is called — no polling, no page refresh.</p>
+      </div>
+      <div class="split-panel">
+        <h3>Offline tolerance</h3>
+        <p>The Java desktop client can keep issuing and calling tickets during a brief network drop, syncing back to the API once connectivity returns.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span>Deployment</p>
+        <h2>Deployment diagram</h2>
+        <p class="section-sub">HARDAM deploys either fully on-premise, behind an institution's own firewall, or on a managed cloud instance we operate for you.</p>
+      </div>
+      <div class="arch-diagram">
+        <div class="arch-row">
+          <div class="arch-box">Front Desk PCs<br><span style="font-weight:400; font-size:.78rem;">Java client</span></div>
+          <div class="arch-box">On-site Server<br><span style="font-weight:400; font-size:.78rem;">PHP + MySQL</span></div>
+          <div class="arch-box">Public Displays<br><span style="font-weight:400; font-size:.78rem;">Browser kiosk mode</span></div>
+        </div>
+        <p class="arch-arrow">↓ optional ↓</p>
+        <div class="arch-row">
+          <div class="arch-box amber">Cloud Sync &amp; Backup<br><span style="font-weight:400; font-size:.78rem;">Managed by HARDAM</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" id="contact">
+    <div class="wrap cta-inner">
+      <h2>Have your IT team review the architecture</h2>
+      <p>We're happy to walk through hosting, backup, and security details with your infrastructure team.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-accent btn-lg">Schedule a technical call</a>
+        <a href="technology.html" class="btn btn-outline-light btn-lg">See the tech stack</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-word">HARDAM</span>
+      <p>Smart Queue &amp; Citizen Service Management Platform</p>
+      <div class="social-row">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.08-2.7-1.08-.36-.94-.89-1.19-.89-1.19-.72-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.23 1.87.87 2.33.67.07-.52.28-.87.5-1.08-1.78-.2-3.65-.89-3.65-3.97 0-.88.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.13 0 0 .68-.22 2.2.83a7.6 7.6 0 014 0c1.53-1.05 2.2-.83 2.2-.83.44 1.11.16 1.93.08 2.13.52.56.83 1.27.83 2.15 0 3.09-1.88 3.76-3.67 3.96.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 008 0z"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="features.html">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="technology.html">Technology</a>
+      <a href="documentation.html">Documentation</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 HARDAM Technologies. All rights reserved. · <a href="#privacy">Privacy policy</a> · <a href="#terms">Terms of service</a></p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
